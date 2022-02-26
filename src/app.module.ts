@@ -12,9 +12,9 @@ import { TaskModule } from './modules/task/task.module';
       port: 3306,
       username: 'root',
       password: '2222002',
-      database: 'tasksdb',
+      database: 'tasks',
       entities: [__dirname + '/task.data/entities/*.entity{.ts,.js}'],
-      synchronize: false,
+      synchronize: true,
     }),
     TaskModule
   ],
